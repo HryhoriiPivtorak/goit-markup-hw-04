@@ -1,0 +1,454 @@
+/* Палітра кольорів 
+background: #F5F5F5;
+background-header: #FFFFFF;
+background-futer: #2F303A;
+background-hero: #2F303A;
+background-team: #F5F4FA
+background-botton: #F5F4FA;
+accent-button: #2196F3;
+white-button: #FFFFFF;
+black-word: #212121;
+logo-blue: #2196F3;
+logo-black: #000000;
+main-color-txt: #212121;
+color-text: #757575;
+text-footer: rgba(255, 255, 255, 0.6);
+header-border-color: #ECECEC;
+button-active: #188CE8;
+
+*/
+
+:root {
+  --accent-color: #2196f3;
+  --main-color-txt: #212121;
+  --main-bg-color: #fff;
+  --logo-black: #000000;
+  --button-white-txt: #fff;
+  --color-text: #757575;
+  --button-bg-color: #f5f4fa;
+  --team-bg: #f5f4fa;
+  --hero-bg: #2f303a;
+  --footer-bg: #2f303a;
+  --header-border: #ececec;
+  --works-border: #eeeeee;
+  --button-active: #188ce8;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-color-txt);
+
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+}
+ul {
+  padding-left: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  /* outline: 2px solid tomato; */
+}
+
+/* Main-nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav,
+.contacts {
+  display: flex;
+}
+.nav {
+  margin-left: 93px;
+}
+
+.contacts {
+  margin-left: auto;
+}
+/* Ховаємо єлементи з h2 */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Скасував мітки у списках */
+.list {
+  list-style: none;
+}
+
+.skills-flex {
+  display: flex;
+  gap: 30px;
+}
+
+/* Скасував підкреслювання у посиланнях */
+.link,
+.cont {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.addres {
+  margin-top: 20px;
+  font-style: normal;
+}
+.item-add + .item-add {
+  margin-top: 9px;
+}
+
+/*Перша частина логотипу */
+.logo-blue {
+  color: var(--accent-color);
+}
+
+/* Друга частина логотипу */
+.logo-black {
+  color: var(--logo-black);
+}
+
+/* Друга частина логотипу у футері */
+.logo-white {
+  color: #fff;
+}
+
+/* Отступи всім елементам крім останнього */
+.site-nav .item:not(:last-child),
+.contacts .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* Задав кольор тексту посилань, розширив паддінги, 
+перевів зі строчного у блочний  */
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--main-color-txt);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contacts .cont {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* Зміна кольору тексту (миш, таб) */
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts .cont:hover,
+.contacts .cont:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* Сіренька смужечка під хедером */
+header {
+  border-bottom: 1px solid var(--header-border);
+}
+
+/* Головний текст */
+.hero {
+  padding-bottom: 200px;
+  padding-top: 200px;
+  background-color: var(--hero-bg);
+}
+
+/* Шрифт для h1 "Ефективні рішення" */
+.hero-txt {
+  width: 696px;
+  margin: 0 auto 30px auto;
+
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+}
+
+/* Колір тексту скілів, професії, назви робіт */
+.skills-list,
+.prof,
+.work-list,
+.cont {
+  color: var(--color-text);
+
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Розмір шрифту для "Наші скіли" h3 */
+.skills-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.no-padding {
+  padding-bottom: 0;
+}
+
+.block-work {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Колір фону для секції "Наша команда" */
+.our-team {
+  background-color: var(--team-bg);
+}
+
+/* Розмір шрифту для тексту у секції "Наші скіли" */
+.skills-list {
+  font-weight: 400;
+  line-height: 1.71;
+  text-transform: none;
+}
+
+/* Розмір шрифту для секцій "Наші скіли" і "Наша команда", h2 */
+.subtitle,
+.team {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* Розмір шрифту для імен у "Наша команда" */
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+
+  text-align: center;
+
+  margin-bottom: 10px;
+}
+
+.command {
+  padding: 30px 0;
+}
+
+.card-design {
+  background: #ffffff;
+  /* material shadow v1 */
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* Розмір шрифта для професій у "Наша команда" */
+.prof {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  text-align: center;
+}
+
+/* Розмір шрифту для проєктів у "Приклади робіт", h3*/
+.project {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  margin-bottom: 4px;
+}
+
+/* Розмір шрифту для прикладів дизайну у "Приклад робіт"  */
+.work-list {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+/* Футер */
+.footer {
+  padding: 60px 0;
+  background-color: var(--footer-bg);
+}
+
+/* Колір тексту у футері */
+.list-footer {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Тип шрифту у футері */
+.contacts-nav {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+.addr-txt {
+  color: var(--button-white-txt);
+}
+
+/* Зміна кольору тексту у футері (миш, таб) */
+.list-footer:hover,
+.list-footer:focus {
+  color: var(--button-white-txt);
+}
+
+/* Кнопка фільтру*/
+.bt {
+  color: #212121;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+
+  padding: 6px 22px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Шрифт для КНОПКИ "Замовити послугу" */
+.but-oder {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 700;
+  font-size: 16px;
+  font-family: inherit;
+
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  min-width: 216px;
+  align-items: center;
+  padding: 10px 32px;
+  /* justify-content: center; */
+  border-radius: 4px;
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--button-white-txt);
+}
+
+.but-oder:hover,
+.but-oder:focus {
+  background-color: var(--button-active);
+}
+
+/* Зміна кольору кнопок */
+.bt.primery,
+.bt.secondary:hover,
+.bt.secondary:focus {
+  color: var(--button-white-txt);
+  background-color: var(--accent-color);
+}
+
+/* Кнопка фільтру не активна */
+.bt.secondary {
+  background-color: var(--button-bg-color);
+}
+
+.button-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
+.button-item {
+}
+
+/* Сітка "Приклади робіт" */
+.example-work {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.examples {
+  padding: 20px 24px;
+  border: 1px solid var(--works-border);
+  border-top: none;
+}
+
+/* TEST */
+:root {
+  --items: 3;
+  --ident: 30px;
+}
+.example-worktest {
+  --items: 3;
+  --ident: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ident);
+}
+.itemtest {
+  flex-basis: calc(100% - var(--ident) * (var(--items)-1)) / var(--items);
+}
