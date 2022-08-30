@@ -87,13 +87,21 @@ img {
 .contacts {
   display: flex;
 }
+
+/* Отступи всім елементам крім останнього */
+.site-nav {
+  gap: 50px;
+}
+
 .nav {
   margin-left: 93px;
 }
 
 .contacts {
   margin-left: auto;
+  gap: 30px;
 }
+
 /* Ховаємо єлементи з h2 */
 .visually-hidden {
   position: absolute;
@@ -116,11 +124,11 @@ img {
 
 .skills-flex {
   display: flex;
-  gap: 30px;
+  /* gap: 30px; */
 }
 .icon::before {
   content: "";
-  display: block;
+  display: inline-block;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -161,7 +169,7 @@ img {
   margin-top: 20px;
   font-style: normal;
 }
-.item-add + .item-add {
+.item-addr + .item-addr {
   margin-top: 9px;
 }
 
@@ -178,12 +186,6 @@ img {
 /* Друга частина логотипу у футері */
 .logo-white {
   color: #fff;
-}
-
-/* Отступи всім елементам крім останнього */
-.site-nav .item:not(:last-child),
-.contacts .item:not(:last-child) {
-  margin-right: 50px;
 }
 
 /* Задав кольор тексту посилань, розширив паддінги, 
@@ -203,6 +205,26 @@ img {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+/* Іконка ел.пошти */
+.icon-email::before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+  background-image: url(../images/envelope.svg);
+}
+
+/* Іконка телефону */
+.icon-tel::before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+  background-image: url(../images/smartphone.svg);
 }
 
 /* Зміна кольору тексту (миш, таб) */
@@ -460,9 +482,6 @@ header {
   justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
-}
-
-.button-item {
 }
 
 /* Сітка "Приклади робіт" */
