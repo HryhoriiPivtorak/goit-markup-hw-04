@@ -16,6 +16,7 @@ text-footer: rgba(255, 255, 255, 0.6);
 header-border-color: #ECECEC;
 button-active: #188CE8;
 gradient-color: #2F303A;
+background-icon: ##F5F4FA;
 
 */
 
@@ -36,6 +37,7 @@ gradient-color: #2F303A;
   /* --gradient-color: #2f303a66; */
   --gradient-color-start: #2f303a66;
   --gradient-color-end: #2f303a66;
+  --background-icon: #f5f4fa;
 }
 
 body {
@@ -115,6 +117,32 @@ img {
 .skills-flex {
   display: flex;
   gap: 30px;
+}
+.icon::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  margin-right: 0;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--background-icon);
+  border-radius: 4px;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/antenna\ 1.png);
+}
+.icon-clock::before {
+  background-image: url(../images/clock\ 1.png);
+}
+.icon-diagram::before {
+  background-image: url(../images/diagram\ 1.png);
+}
+.icon-astronaut::before {
+  background-image: url(../images/astronaut\ 1.png);
 }
 
 /* Скасував підкреслювання у посиланнях */
