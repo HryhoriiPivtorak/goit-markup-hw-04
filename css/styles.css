@@ -2,7 +2,7 @@
 background: #F5F5F5;
 background-header: #FFFFFF;
 background-futer: #2F303A;
-background-hero: #2F303A;
+background-hero: #C4C4C4;
 background-team: #F5F4FA
 background-botton: #F5F4FA;
 accent-button: #2196F3;
@@ -15,6 +15,7 @@ color-text: #757575;
 text-footer: rgba(255, 255, 255, 0.6);
 header-border-color: #ECECEC;
 button-active: #188CE8;
+gradient-color: #2F303A;
 
 */
 
@@ -27,11 +28,14 @@ button-active: #188CE8;
   --color-text: #757575;
   --button-bg-color: #f5f4fa;
   --team-bg: #f5f4fa;
-  --hero-bg: #2f303a;
+  --hero-bg: #c4c4c4;
   --footer-bg: #2f303a;
   --header-border: #ececec;
   --works-border: #eeeeee;
   --button-active: #188ce8;
+  /* --gradient-color: #2f303a66; */
+  --gradient-color-start: #2f303a66;
+  --gradient-color-end: #2f303a66;
 }
 
 body {
@@ -68,7 +72,7 @@ img {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
 }
 
 /* Main-nav */
@@ -194,6 +198,15 @@ header {
 .hero {
   padding-bottom: 200px;
   padding-top: 200px;
+  background-image: linear-gradient(
+      to right,
+      var(--gradient-color-start),
+      var(--gradient-color-end)
+    ),
+    url(../images/img-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1600px;
   background-color: var(--hero-bg);
 }
 
