@@ -99,7 +99,34 @@ img {
 
 .contacts {
   margin-left: auto;
+  align-items: center;
   gap: 30px;
+}
+
+.contacts .cont {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* Іконка ел.пошти */
+.icon-email::before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+  background-image: url(../images/envelope.svg);
+}
+
+/* Іконка телефону */
+.icon-tel::before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+  background-image: url(../images/smartphone.svg);
 }
 
 /* Ховаємо єлементи з h2 */
@@ -118,7 +145,8 @@ img {
 }
 
 /* Скасував мітки у списках */
-.list {
+.list,
+.social-network {
   list-style: none;
 }
 
@@ -199,32 +227,6 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-
-.contacts .cont {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-/* Іконка ел.пошти */
-.icon-email::before {
-  content: "";
-  display: inline-block;
-  margin-right: 10px;
-  width: 16px;
-  height: 12px;
-  background-image: url(../images/envelope.svg);
-}
-
-/* Іконка телефону */
-.icon-tel::before {
-  content: "";
-  display: inline-block;
-  margin-right: 10px;
-  width: 10px;
-  height: 16px;
-  background-image: url(../images/smartphone.svg);
 }
 
 /* Зміна кольору тексту (миш, таб) */
@@ -367,6 +369,7 @@ header {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+  margin-bottom: 16px;
 
   text-align: center;
 }
