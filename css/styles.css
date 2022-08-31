@@ -104,7 +104,7 @@ img {
 }
 
 .contacts .cont {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -112,7 +112,7 @@ img {
 /* Іконка ел.пошти */
 .icon-email::before {
   content: "";
-  display: inline-block;
+  align-self: center;
   margin-right: 10px;
   width: 16px;
   height: 12px;
