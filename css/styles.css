@@ -108,26 +108,18 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.cont {
+  gap: 10px;
+}
+
+.icon-cont {
+  align-self: center;
+  fill: var(--color-text);
+}
 
 /* Іконка ел.пошти */
-.icon-email::before {
-  content: "";
-  align-self: center;
-  margin-right: 10px;
-  width: 16px;
-  height: 12px;
-  background-image: url(../images/envelope.svg);
-}
 
 /* Іконка телефону */
-.icon-tel::before {
-  content: "";
-  display: inline-block;
-  margin-right: 10px;
-  width: 10px;
-  height: 16px;
-  background-image: url(../images/smartphone.svg);
-}
 
 /* Ховаємо єлементи з h2 */
 .visually-hidden {
@@ -152,33 +144,7 @@ img {
 
 .skills-flex {
   display: flex;
-  /* gap: 30px; */
-}
-.icon::before {
-  content: "";
-  display: inline-block;
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  margin-right: 0;
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--background-icon);
-  border-radius: 4px;
-}
-
-.icon-antenna::before {
-  background-image: url(../images/antenna\ 1.png);
-}
-.icon-clock::before {
-  background-image: url(../images/clock\ 1.png);
-}
-.icon-diagram::before {
-  background-image: url(../images/diagram\ 1.png);
-}
-.icon-astronaut::before {
-  background-image: url(../images/astronaut\ 1.png);
+  gap: 30px;
 }
 
 /* Скасував підкреслювання у посиланнях */
@@ -235,6 +201,10 @@ img {
 .contacts .cont:hover,
 .contacts .cont:focus {
   color: var(--accent-color);
+}
+.contacts .cont:hover .icon-cont,
+.contacts .cont:focus .icon-cont {
+  fill: var(--accent-color);
 }
 
 .site-nav .link.current {
@@ -303,6 +273,20 @@ header {
 
   margin-bottom: 10px;
 }
+.icon-bg {
+  display: flex;
+  background: var(--button-bg-color);
+  border-radius: 4px;
+  outline: 1px solid greenyellow;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.icon-skills {
+  display: block;
+  padding-left: auto;
+}
+
 .section {
   padding-bottom: 94px;
   padding-top: 94px;
