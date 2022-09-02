@@ -157,7 +157,7 @@ img {
   line-height: 1.19;
 }
 .addres {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   font-style: normal;
 }
 .item-addr + .item-addr {
@@ -274,9 +274,8 @@ header {
   display: flex;
   background: var(--button-bg-color);
   border-radius: 4px;
-  /* outline: 1px solid greenyellow; */
-  justify-content: center;
 
+  justify-content: center;
   margin-bottom: 30px;
 }
 
@@ -460,6 +459,28 @@ header {
 .list-footer:focus {
   color: var(--button-white-txt);
 }
+
+.footer-info {
+  display: flex;
+}
+
+.addres-block {
+  padding-right: 70px;
+}
+.join {
+  font-weight: 700;
+  color: var(--button-white-txt);
+  text-transform: uppercase;
+
+  padding-top: 12px;
+}
+
+.web-studio,
+.join {
+  margin-bottom: 20px;
+}
+
+/* Приєднуйтеся */
 
 /* Кнопка фільтру*/
 .bt {
