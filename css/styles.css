@@ -38,6 +38,7 @@ background-icon: ##F5F4FA;
   --gradient-color-start: #2f303a66;
   --gradient-color-end: #2f303a66;
   --background-icon: #f5f4fa;
+  --icon-fill: #afb1b8;
 }
 
 body {
@@ -74,7 +75,7 @@ img {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* Main-nav */
@@ -116,10 +117,6 @@ img {
   align-self: center;
   fill: var(--color-text);
 }
-
-/* Іконка ел.пошти */
-
-/* Іконка телефону */
 
 /* Ховаємо єлементи з h2 */
 .visually-hidden {
@@ -213,7 +210,7 @@ img {
 
 /* Сіренька смужечка під хедером */
 header {
-  border-bottom: 1px solid var(--header-border);
+  -bottom: 1px solid var(--header-border) border;
 }
 
 /* Головний текст */
@@ -277,9 +274,10 @@ header {
   display: flex;
   background: var(--button-bg-color);
   border-radius: 4px;
-  outline: 1px solid greenyellow;
-  margin-bottom: 30px;
+  /* outline: 1px solid greenyellow; */
   justify-content: center;
+
+  margin-bottom: 30px;
 }
 
 .icon-skills {
@@ -316,7 +314,8 @@ header {
 
 /* Розмір шрифту для секцій "Наші скіли" і "Наша команда", h2 */
 .subtitle,
-.team {
+.team,
+.clients {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -356,6 +355,65 @@ header {
   margin-bottom: 16px;
 
   text-align: center;
+}
+
+/* Посилання на соціальні мережі */
+.socials {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: var(--main-bg-color);
+}
+.icon-socials {
+  fill: var(--icon-fill);
+}
+
+.socials-link:hover,
+.socials-link:hover .icon-socials,
+.socials-link:focus,
+.socials-link:focus .icon-socials {
+  fill: var(--button-white-txt);
+  background-color: var(--accent-color);
+}
+
+/* Постійні клієнти */
+
+.icon-logo {
+  fill: var(--icon-fill);
+}
+
+.clients-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-fill);
+  border-radius: 4px;
+}
+
+.logo-link:focus,
+.logo-link:focus .icon-logo,
+.logo-link:hover,
+.logo-link:hover .icon-logo {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /* Розмір шрифту для проєктів у "Приклади робіт", h3*/
@@ -482,20 +540,4 @@ header {
   padding: 20px 24px;
   border: 1px solid var(--works-border);
   border-top: none;
-}
-
-/* TEST */
-:root {
-  --items: 3;
-  --ident: 30px;
-}
-.example-worktest {
-  --items: 3;
-  --ident: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--ident);
-}
-.itemtest {
-  flex-basis: calc(100% - var(--ident) * (var(--items)-1)) / var(--items);
 }
