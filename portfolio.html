@@ -97,7 +97,7 @@
         <div class="container">
           <h2 class="visually-hidden">Приклади робіт</h2>
           <ul class="list example-work">
-            <li>
+            <li class="example">
               <img
                 src="./images/img-4.jpg"
                 width="370"
@@ -109,7 +109,7 @@
                 <p class="work-list">Веб-сайт</p>
               </div>
             </li>
-            <li>
+            <li class="example">
               <img
                 src="./images/img-5.jpg"
                 width="370"
@@ -123,7 +123,7 @@
                 <p class="work-list">Дизайн</p>
               </div>
             </li>
-            <li>
+            <li class="example">
               <img
                 src="./images/img-6.jpg"
                 width="370"
@@ -135,7 +135,7 @@
                 <p class="work-list">Дизайн</p>
               </div>
             </li>
-            <li>
+            <li class="example">
               <img
                 src="./images/img-7.jpg"
                 width="370"
@@ -147,7 +147,7 @@
                 <p class="work-list">Маркетинг</p>
               </div>
             </li>
-            <li>
+            <li class="example">
               <img
                 src="./images/img-8.jpg"
                 width="370"
@@ -159,7 +159,7 @@
                 <p class="work-list">Додаток</p>
               </div>
             </li>
-            <li>
+            <li class="example">
               <img
                 src="./images/img-9.jpg"
                 width="370"
@@ -173,7 +173,7 @@
                 <p class="work-list">Веб-сайт</p>
               </div>
             </li>
-            <li>
+            <li class="example">
               <img
                 src="./images/img-10.jpg"
                 width="370"
@@ -187,7 +187,7 @@
                 <p class="work-list">Дизайн</p>
               </div>
             </li>
-            <li>
+            <li class="example">
               <img
                 src="./images/img-11.jpg"
                 width="370"
@@ -199,7 +199,7 @@
                 <p class="work-list">Маркетинг</p>
               </div>
             </li>
-            <li>
+            <li class="example">
               <img
                 src="./images/img-12.jpg"
                 width="370"
@@ -218,38 +218,107 @@
 
     <!--Footer: Контакти-->
     <footer class="footer">
-      <div class="container">
-        <a class="logo link" href="./index.html"
-          ><span class="logo-blue" lang="en">Web</span
-          ><span class="logo-white" lang="en">Studio</span>
-        </a>
-        <address class="addres">
-          <ul class="contacts-nav list">
-            <li class="item-add">
-              <a
-                class="list-footer link addr-txt"
-                href="https://goo.gl/maps/GKG1Pfcs3RUsKqncA"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                м. Київ, пр-т Лесі Українки, 26</a
-              >
-            </li>
-            <li class="item-add">
-              <a
-                class="list-footer link"
-                lang="en"
-                href="mailto:ainfo@devstudio.com"
-                >ainfo@devstudio.com</a
-              >
-            </li>
-            <li class="item-add">
-              <a class="list-footer link" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+      <div class="container footer-info">
+        <div class="addres-block">
+          <div class="web-studio">
+            <a class="logo link" href="./index.html">
+              <span class="logo-blue" lang="en">Web</span>
+              <span class="logo-white" lang="en">Studio</span>
+            </a>
+          </div>
+          <address class="addres">
+            <ul class="contacts-nav list">
+              <li class="item-addr">
+                <a
+                  class="list-footer link addr-txt"
+                  href="https://goo.gl/maps/GKG1Pfcs3RUsKqncA"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="item-addr">
+                <a
+                  class="list-footer link"
+                  lang="en"
+                  href="mailto:ainfo@devstudio.com"
+                  >ainfo@devstudio.com</a
+                >
+              </li>
+              <li class="item-addr">
+                <a class="list-footer link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <!-- Приєднуйтесь -->
+        <div>
+          <p class="join">приєднуйтесь</p>
+          <div>
+            <ul class="join-list list">
+              <li>
+                <a
+                  class="join-icon"
+                  href="http://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  lang="en"
+                  aria-label="Instagram"
+                >
+                  <svg class="join-icon-item" width="20px" height="20px">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="join-icon"
+                  href="http://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  lang="en"
+                  aria-label="Instagram"
+                >
+                  <svg class="join-icon-item" width="20px" height="20px">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="join-icon"
+                  href="http://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  lang="en"
+                  aria-label="Instagram"
+                >
+                  <svg class="join-icon-item" width="20px" height="20px">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="join-icon"
+                  href="http://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  lang="en"
+                  aria-label="Instagram"
+                >
+                  <svg class="join-icon-item" width="20px" height="20px">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
