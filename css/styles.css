@@ -17,6 +17,7 @@ header-border-color: #ECECEC;
 button-active: #188CE8;
 gradient-color: #2F303A;
 background-icon: ##F5F4FA;
+background-icon-footer: rgba(255, 255, 255, 0.1);
 
 */
 
@@ -39,6 +40,7 @@ background-icon: ##F5F4FA;
   --gradient-color-end: #2f303a66;
   --background-icon: #f5f4fa;
   --icon-fill: #afb1b8;
+  --background-icon-footer: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -272,10 +274,13 @@ header {
 }
 .icon-bg {
   display: flex;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+
   background: var(--button-bg-color);
   border-radius: 4px;
 
-  justify-content: center;
   margin-bottom: 30px;
 }
 
@@ -481,6 +486,31 @@ header {
 }
 
 /* Приєднуйтеся */
+
+.join-list {
+  display: flex;
+  gap: 10px;
+}
+.join-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--background-icon-footer);
+}
+
+.join-icon-item {
+  fill: var(--button-white-txt);
+}
+.join-icon:hover,
+.join-icon:hover .join-icon-item,
+.join-icon:focus,
+.join-icon:focus .join-icon-item {
+  background-color: var(--accent-color);
+}
 
 /* Кнопка фільтру*/
 .bt {
