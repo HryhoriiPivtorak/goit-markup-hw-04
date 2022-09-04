@@ -117,7 +117,7 @@ img {
 
 .icon-cont {
   align-self: center;
-  fill: var(--color-text);
+  fill: currentColor;
 }
 
 /* Ховаємо єлементи з h2 */
@@ -201,7 +201,7 @@ img {
 .contacts .cont:focus {
   color: var(--accent-color);
 }
-.contacts .cont:hover .icon-cont,
+
 .contacts .cont:focus .icon-cont {
   fill: var(--accent-color);
 }
@@ -219,6 +219,10 @@ header {
 .hero {
   padding-bottom: 200px;
   padding-top: 200px;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+
   background-image: linear-gradient(
       to right,
       var(--gradient-color-start),
@@ -227,7 +231,7 @@ header {
     url(../images/img-hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1600px;
+  background-size: cover;
   background-color: var(--hero-bg);
 }
 
@@ -367,6 +371,7 @@ header {
   gap: 10px;
   justify-content: center;
 }
+
 .socials-link {
   display: flex;
   align-items: center;
@@ -374,12 +379,14 @@ header {
 
   width: 44px;
   height: 44px;
+
   border-radius: 50%;
+  color: var(--icon-fill);
 
   background-color: var(--main-bg-color);
 }
 .icon-socials {
-  fill: var(--icon-fill);
+  fill: currentColor;
 }
 
 .socials-link:hover,
