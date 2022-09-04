@@ -197,22 +197,22 @@ img {
 /* Зміна кольору тексту (миш, таб) */
 .site-nav .link:hover,
 .site-nav .link:focus,
-.contacts .cont:hover,
-.contacts .cont:focus {
+.cont:hover,
+.cont:focus {
   color: var(--accent-color);
 }
 
-.contacts .cont:focus .icon-cont {
-  fill: var(--accent-color);
+.link.current {
+  color: var(--accent-color);
 }
 
-.site-nav .link.current {
-  color: var(--accent-color);
+.icon-cont {
+  fill: currentColor;
 }
 
 /* Сіренька смужечка під хедером */
 header {
-  -bottom: 1px solid var(--header-border) border;
+  border-bottom: 1px solid var(--header-border);
 }
 
 /* Головний текст */
@@ -385,23 +385,18 @@ header {
 
   background-color: var(--main-bg-color);
 }
+
+.socials-link:hover,
+.socials-link:focus {
+  color: var(--button-white-txt);
+  background-color: var(--accent-color);
+}
+
 .icon-socials {
   fill: currentColor;
 }
 
-.socials-link:hover,
-.socials-link:hover .icon-socials,
-.socials-link:focus,
-.socials-link:focus .icon-socials {
-  fill: var(--button-white-txt);
-  background-color: var(--accent-color);
-}
-
 /* Постійні клієнти */
-
-.icon-logo {
-  fill: var(--icon-fill);
-}
 
 .clients-list {
   display: flex;
@@ -413,17 +408,21 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 170px;
   height: 92px;
+  color: var(--icon-fill);
   border: 1px solid var(--icon-fill);
   border-radius: 4px;
 }
 
+.icon-logo {
+  fill: currentColor;
+}
+
 .logo-link:focus,
-.logo-link:focus .icon-logo,
-.logo-link:hover,
-.logo-link:hover .icon-logo {
-  fill: var(--accent-color);
+.logo-link:hover {
+  color: var(--accent-color);
   border-color: var(--accent-color);
 }
 
@@ -474,17 +473,16 @@ header {
 
 .footer-info {
   display: flex;
+  align-items: baseline;
 }
 
 .addres-block {
-  padding-right: 70px;
+  margin-right: 70px;
 }
 .join {
   font-weight: 700;
   color: var(--button-white-txt);
   text-transform: uppercase;
-
-  padding-top: 12px;
 }
 
 .web-studio,
@@ -505,18 +503,19 @@ header {
 
   width: 44px;
   height: 44px;
+
+  color: var(--button-white-txt);
   border-radius: 50%;
   background-color: var(--background-icon-footer);
 }
 
-.join-icon-item {
-  fill: var(--button-white-txt);
-}
 .join-icon:hover,
-.join-icon:hover .join-icon-item,
-.join-icon:focus,
-.join-icon:focus .join-icon-item {
+.join-icon:focus {
   background-color: var(--accent-color);
+}
+
+.join-icon-item {
+  fill: currentColor;
 }
 
 /* Кнопка фільтру*/
@@ -572,6 +571,9 @@ header {
 .bt.secondary:focus {
   color: var(--button-white-txt);
   background-color: var(--accent-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Кнопка фільтру не активна */
@@ -594,11 +596,12 @@ header {
   gap: 30px;
 }
 
-.example {
-  cursor: pointer;
+.example-item {
+  display: block;
 }
-.example:hover,
-.example:focus {
+
+.example-item:hover,
+.example-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
