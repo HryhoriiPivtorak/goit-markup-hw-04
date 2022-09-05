@@ -432,6 +432,7 @@ header {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--main-color-txt);
 
   margin-bottom: 4px;
 }
@@ -520,7 +521,7 @@ header {
 
 /* Кнопка фільтру*/
 .bt {
-  color: #212121;
+  color: var(--main-color-txt);
 
   font-family: inherit;
   font-weight: 500;
